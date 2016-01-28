@@ -1,4 +1,4 @@
-# graze-web-features
+# graze-features
 
 This is an _example_ framework for a docker based configuration of [behat](https://github.com/Behat/Behat#readme) and [selenium](http://docs.seleniumhq.org/); decoupled from the web application it's testing.
 

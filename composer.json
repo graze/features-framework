@@ -1,0 +1,28 @@
+{
+    "name": "graze/graze-web-features",
+
+    "description": "Feature specifications for the graze/web project.",
+
+    "type": "project",
+
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+
+    "authors": [
+        {
+            "name": "Samuel Parkinson",
+            "email": "sam.james.parkinson@gmail.com"
+        }
+    ],
+
+    "require": {
+        "behat/behat": "^3.0",
+        "behat/mink-extension": "^2.1",
+        "behat/mink-goutte-driver": "^1.2",
+        "behat/mink-selenium2-driver": "^1.3",
+        "hamcrest/hamcrest-php": "^1.2"
+    }
+}

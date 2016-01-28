@@ -13,15 +13,21 @@ Then just run:
 ```bash
 ~$ make install
 ~$ make serve
-~$ HOST=https://www.graze.com make test
+~$ make test HOST=https://www.graze.com
 ```
+
+## Connecting via VNC
+
+<img src="https://i.imgur.com/n54iybM.png" align="right" width="300" />
 
 The password for the VNC connection is `secret`.
 
-### Passing Arguments to Behat
+On OSX you can use the Screen Sharing app to connect to the server.
 
-The format is `make test -- <arguments>`. To print the usage information for example, run:
+## Passing Arguments to Behat
+
+The format is `make test -- <arguments>`. To append new snippets to your feature context for example, run:
 
 ```bash
-~$ HOST=https://www.graze.com make test -- --help
+~$ make test HOST=https://www.graze.com -- --append-snippets
 ```

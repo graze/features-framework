@@ -1,6 +1,5 @@
 <?php
 
-use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Behat\Hook\Scope\BeforeScenarioScope;
 use Behat\Behat\Tester\Exception\PendingException;
@@ -12,7 +11,7 @@ use GuzzleHttp\Client as GuzzleClient;
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
+class FeatureContext extends MinkContext implements SnippetAcceptingContext
 {
     /**
      * Initializes context.

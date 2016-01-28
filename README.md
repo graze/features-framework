@@ -1,6 +1,6 @@
 # graze-web-features
 
-<img src="https://i.imgur.com/Wywm50T.gif" align="right" width="300" />
+<img src="https://i.imgur.com/Wywm50T.gif" align="right" width="450" />
 
 Get started by installing the [docker toolbox](https://www.docker.com/products/docker-toolbox).
 

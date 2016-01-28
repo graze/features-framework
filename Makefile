@@ -19,7 +19,7 @@ install: ## Pull any images and install any dependencies.
 		composer/composer update --no-interaction --optimize-autoloader --ignore-platform-reqs
 
 serve: ## Start the selenium instance.
-	docker rm -f ${NAME} 1> /dev/null || true
+	docker rm -f ${NAME} 2> /dev/null || true
 	docker run -d -p 4444:4444 -p 5900:${VNC_PORT} --name ${NAME} selenium/standalone-chrome-debug 1> /dev/null
 	echo "The VNC address is \033[32m${VNC_HOST}:${VNC_PORT}\033[39m."
 

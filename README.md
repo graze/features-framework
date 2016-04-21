@@ -1,6 +1,6 @@
-# graze-features
+# graze/features-framework
 
-This is an _example_ framework for a docker based configuration of [behat](https://github.com/Behat/Behat#readme) and [selenium](http://docs.seleniumhq.org/); decoupled from the web application it's testing.
+This is an _example_ framework for a docker based configuration of [Behat](https://github.com/Behat/Behat#readme) and [Selenium](http://docs.seleniumhq.org/); decoupled from the web application it's testing.
 
 <img src="https://i.imgur.com/Wywm50T.gif" align="right" width="450" />
 
@@ -11,8 +11,7 @@ Get started by installing the [docker toolbox](https://www.docker.com/products/d
 Then just run:
 
 ```bash
-~$ make install
-~$ make serve
+~$ make install serve
 ~$ make test HOST=https://www.graze.com
 ```
 

@@ -1,15 +1,9 @@
 {
-    "name": "graze/graze-web-features",
+    "name": "graze/features-framework",
 
-    "description": "Feature specifications for the graze/web project.",
+    "description": "An example framework for using Behat and Selenium under Docker.",
 
     "type": "project",
-
-    "autoload": {
-        "classmap": [
-            "src/"
-        ]
-    },
 
     "authors": [
         {
@@ -17,6 +11,13 @@
             "email": "sam.james.parkinson@gmail.com"
         }
     ],
+
+
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
 
     "require": {
         "behat/behat": "^3.0",

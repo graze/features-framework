@@ -29,12 +29,15 @@ class FeatureContext extends MinkContext implements SnippetAcceptingContext
      */
     public function beforeScenario(BeforeScenarioScope $scope)
     {
-        // Disable SSL in guzzle.
-        $this->getSession('goutte')->getDriver()->getClient()->setClient(new GuzzleClient([
-            'verify' => false,
-        ]));
-
         // Set the base_url from the environment.
         $this->setMinkParameter('base_url', getenv('HOST'));
+    }
+
+    /**
+     * @Then I should see a list of snacks
+     */
+    public function iShouldSeeAListOfSnacks()
+    {
+        $this->assertElementOnPage('#products');
     }
 }
